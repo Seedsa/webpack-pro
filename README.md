@@ -1,6 +1,6 @@
-# SEED-CLI
+# webpack-pro
 
-基于 Webpack5 的一个 React+Typescript 脚手架，并根据 webpack5 的新特性简化了一些配置，接入了阿里巴巴前端规范,保证性能的前提下追求尽可能的简约。
+基于 Webpack5 的一个 React+Typescript 脚手架，并根据 webpack5 的新特性删掉了一些 webpack4 被替换的插件，并接入了阿里巴巴前端 lint 规范
 
 ## 特性
 
