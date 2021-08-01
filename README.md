@@ -10,10 +10,11 @@
 - BABEL 缓存
 - JS 文件压缩
 - CSS 文件压缩
-- base64 处理
+- base64 图片处理
 - 支持 CSS Modules 模块化
+- 开发环境 / 生产环境区分
 - CSS 前缀添加 浏览器兼容
-- 支持热更新
+- 热更新支持
 - CSS 文件单独抽离
 - eslint stylelint 保证编码规范和代码质量
 - commitlint 代码提交规范

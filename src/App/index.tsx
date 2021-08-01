@@ -4,7 +4,7 @@ import img1 from './1.jpg';
 const index = () => {
   return (
     <div className={styles.container}>
-      HELLO WORLD
+      HELLO WORD
       <img src={img1} alt="" />
     </div>
   );

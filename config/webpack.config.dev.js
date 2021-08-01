@@ -3,7 +3,6 @@ const webpack = require('webpack'); // webpack核心
 const WebpackBaseConfig = require('./webpack.config.base');
 const { merge } = require('webpack-merge');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
-
 module.exports = merge(WebpackBaseConfig, {
   mode: 'development',
   devtool: 'eval-cheap-module-source-map',
@@ -61,16 +60,12 @@ module.exports = merge(WebpackBaseConfig, {
     ],
   },
   devServer: {
-    host: 'localhost',
+    contentBase: path.resolve(__dirname, '../dist'),
     port: 3000,
     historyApiFallback: true,
-    overlay: {
-      //当出现编译器错误或警告时，就在网页上显示一层黑色的背景层和错误信息
-      errors: true,
-    },
     inline: true,
     hot: true,
+    hotOnly: true,
   },
-
   plugins: [new FriendlyErrorsWebpackPlugin(), new webpack.HotModuleReplacementPlugin()],
 });
