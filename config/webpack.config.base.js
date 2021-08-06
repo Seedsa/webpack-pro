@@ -25,7 +25,7 @@ const WebpackBaseConfig = {
           {
             loader: 'babel-loader?cacheDirectory',
             options: {
-              presets: ['@babel/preset-env', '@babel/preset-react'],
+              presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
               plugins: [],
             },
           },
